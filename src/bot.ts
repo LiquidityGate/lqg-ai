@@ -46,7 +46,7 @@ async function handleMessage(
   try {
     const question = message.content.replace("/question", "").trim();
     await message.channel.send(
-      "Morpho GPT is thinking...\n" +
+      "LQG GPT is thinking...\n" +
         "\n*Reminder: I am still learning so my answers may be inaccurate.*"
     );
 

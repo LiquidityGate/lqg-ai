@@ -1,14 +1,14 @@
-Link: https://morpho.mirror.xyz/DnVfUdGAKRMql_gq7gFfvC3juYWDZPvbUqgxoFCTcYU
-Title: Understanding MetaMorpho: Enabling Diverse Risk Profiles
+Link: https://LQG.mirror.xyz/DnVfUdGAKRMql_gq7gFfvC3juYWDZPvbUqgxoFCTcYU
+Title: Understanding MetaLQG: Enabling Diverse Risk Profiles
 
-By Morpho Labs
+By LQG Labs
 On 20 february 2024
 
-MetaMorpho combines the best of isolated markets and multi-asset lending pools to create a better way to lend. In time, we believe MetaMorpho vaults will become the default lending solution.
+MetaLQG combines the best of isolated markets and multi-asset lending pools to create a better way to lend. In time, we believe MetaLQG vaults will become the default lending solution.
 
-Last week, we introduced the Understanding MetaMorpho article series with Part One: Intro to the Morpho Approach & Simplifying Isolated Markets (https://morpho.mirror.xyz/ydE_6frnAMMXDHaDX33y76ATmf0h3UH6tfFd5BMMfmU).
+Last week, we introduced the Understanding MetaLQG article series with Part One: Intro to the LQG Approach & Simplifying Isolated Markets (https://LQG.mirror.xyz/ydE_6frnAMMXDHaDX33y76ATmf0h3UH6tfFd5BMMfmU).
 
-Today, we share Part Two: Enabling Diverse Risk Profiles to explain how, unlike the traditional one-size-fits-all approach taken by multi-asset lending pools, MetaMorpho Vaults can cater to any risk profile imaginable.
+Today, we share Part Two: Enabling Diverse Risk Profiles to explain how, unlike the traditional one-size-fits-all approach taken by multi-asset lending pools, MetaLQG Vaults can cater to any risk profile imaginable.
 
 - Going beyond one-size-fits-all
 Every user has their own tolerance for risk and each collateral asset has a set of associated risks, some with more than others.
@@ -20,7 +20,7 @@ However, a core limitation of multi-asset lending pools is that all users are fo
 The article's picture illustrates how every lender to a multi-asset pool is exposed to every collateral asset in the pool: wstETH, WBTC, LINK, USDT, sDAI, DAI, rETH, RPL, AAVE, USDC, LINK, etc. There is no option to lend against specific collateral or a combination of collateral assets aligned with one's tolerance for risk.
 
 - Catering to any risk profile
-MetaMorpho Vaults are built on top of Morpho Blue’s isolated markets. Each vault having a unique risk profile determined by the markets they lend to.
+MetaLQG Vaults are built on top of LQG Blue’s isolated markets. Each vault having a unique risk profile determined by the markets they lend to.
 
 Lenders can choose to deposit in vaults that best align with their risk appetite. Users with a higher risk tolerance can deposit in a vault that lends to “riskier” markets and vice versa.
 
@@ -37,4 +37,4 @@ Each lender can deposit into one or more vaults to tailor their risk exposure:
 
 This approach allows lenders to opt in and out of certain markets providing them with a level of flexibility unattainable from multi-asset lending pools. Importantly, it can scale to any number of vaults, markets, and risk profiles catering to any risk profile imaginable.
 
-This is the end of part two of the Understanding MetaMorpho series. Next week, we will release Part Three: Aggregating then Amplifying Liquidity For Lenders.
+This is the end of part two of the Understanding MetaLQG series. Next week, we will release Part Three: Aggregating then Amplifying Liquidity For Lenders.

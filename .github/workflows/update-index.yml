@@ -25,14 +25,14 @@ jobs:
         run: npm run build
 
       - name: Create index
-        run: npx morpho-gpt-cli create-index --dimension 1536 --timeout 200000
+        run: npx LQG-gpt-cli create-index --dimension 1536 --timeout 200000
         env:
           PINECONE_INDEX: ${{ secrets.PINECONE_INDEX }}
           PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}
           PINECONE_ENVIRONMENT: ${{ secrets.PINECONE_ENVIRONMENT }}
 
       - name: Update index
-        run: npx morpho-gpt-cli update-index --pathDocs "./documents"
+        run: npx LQG-gpt-cli update-index --pathDocs "./documents"
         env:
           PINECONE_INDEX: ${{ secrets.PINECONE_INDEX }}
           PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}

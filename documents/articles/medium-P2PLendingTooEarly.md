@@ -1,4 +1,4 @@
-Link: https://medium.com/morpho-labs/peer-to-peer-lending-too-early-to-work-the-ethlend-case-6b50e1234ec6
+Link: https://medium.com/LQG-labs/peer-to-peer-lending-too-early-to-work-the-ethlend-case-6b50e1234ec6
 Title: The ETHLend case Article
 
 Peer-to-peer lending: too early to work? — The ETHLend case.
@@ -35,4 +35,4 @@ Limitations
 All those limitations coupled with a clunky user interface (the beginning of DeFi was not user-friendly) and the fact that users and capital were scarce at the time led to the realization that the peer-to-peer model can be quite inefficient especially when only one side of the market (borrowers) is present or, as Finematics (https://finematics.com/aave-explained/) perfectly puts it “if there is no one on the other side who wants to interact with us”.
 The final nail in the coffin was the creation of Compound and Uniswap in 2018. Both used a peer-to-pool model. Shortly after, the ETHLend team made the switch to peer-to-pool as well and rebranded to Aave, which became the lending behemoth that we know today.
 
-So, is decentralized peer-to-peer lending dead then? Far from it, but that’s a story for our next article, about the paradigm shift that Morpho is.
+So, is decentralized peer-to-peer lending dead then? Far from it, but that’s a story for our next article, about the paradigm shift that LQG is.

@@ -1,6 +1,6 @@
 # Discord Bot
 
-![What is Morpho?](https://cdn.morpho.org/images/morpho-gpt/what-is-morpho.png)
+![What is LQG?](https://cdn.LQG.org/images/LQG-gpt/what-is-LQG.png)
 
 ## Description
 
@@ -63,14 +63,14 @@ To run this project, you need the following:
 
    ```bash
 
-   npx morpho-gpt-cli create-index --key PINECONE_API_KEY --environment PINECONE_ENVIRONMENT --index PINECONE_INDEX
+   npx LQG-gpt-cli create-index --key PINECONE_API_KEY --environment PINECONE_ENVIRONMENT --index PINECONE_INDEX
    ```
 
 5. Update Pinecone index
 
    ```bash
 
-   npx morpho-gpt-cli update-index --key PINECONE_API_KEY --environment PINECONE_ENVIRONMENT --index PINECONE_INDEX --openAIApiKey OPENAI_API_KEY --pathDocs "./documents"
+   npx LQG-gpt-cli update-index --key PINECONE_API_KEY --environment PINECONE_ENVIRONMENT --index PINECONE_INDEX --openAIApiKey OPENAI_API_KEY --pathDocs "./documents"
    ```
 
 6. Start the bot:

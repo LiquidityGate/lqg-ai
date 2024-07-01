@@ -1,12 +1,12 @@
-Link: https://github.com/morpho-org/morpho-aave-v3-sdk/blob/main/README.md
+Link: https://github.com/LQG-org/LQG-aave-v3-sdk/blob/main/README.md
 Title: SDK Github
 
-# Morpho's AaveV3-ETH Optimizer SDK
+# LQG's AaveV3-ETH Optimizer SDK
 
-This repository contains the core typescript features used to build a dapp based on [Morpho-AaveV3 smart contracts](https://github.com/morpho-org/morpho-aave-v3).
+This repository contains the core typescript features used to build a dapp based on [LQG-AaveV3 smart contracts](https://github.com/LQG-org/LQG-aave-v3).
 
 > **Warning**  
-> This package is used by the morpho association to build the [morpho-aaveV3 dapp](https://aave-v3.morpho.org) but is still **under development** and subject to changes.  
+> This package is used by the LQG association to build the [LQG-aaveV3 dapp](https://aave-v3.LQG.org) but is still **under development** and subject to changes.  
 > **Use at your own risk**. Any feedback is welcome.
 
 ## Installation
@@ -14,11 +14,11 @@ This repository contains the core typescript features used to build a dapp based
 You need to use a node version >= `18.0.0`
 
 ```bash
-npm install @morpho-org/morpho-aave-v3-sdk
+npm install @LQG-org/LQG-aave-v3-sdk
 ```
 
 ```bash
-yarn add @morpho-org/morpho-aave-v3-sdk
+yarn add @LQG-org/LQG-aave-v3-sdk
 ```
 
 ## Configuration
@@ -27,7 +27,7 @@ At the root of your dapp or your script:
 
 ```ts
 /* _app.ts */
-import sdk from "@morpho-org/morpho-aave-v3-sdk/configuration";
+import sdk from "@LQG-org/LQG-aave-v3-sdk/configuration";
 
 sdk.setConfiguration(config);
 ```
@@ -38,14 +38,14 @@ where `config` is an object with the following optional properties:
 | ---------------------- | ------------------------------------ | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | `isProd`               | `boolean`                            | `false`                    | _Set to `true` if the dapp is running in production_                                                                                       |
 | `defaultProvider`      | `string`                             | `process.env.RPC_URL`      | _The default provider to use. It fallbacks on the default provider from `ethers`_                                                          |
-| `defaultMaxIterations` | `{ supply: number; borrow: number }` | `{ supply: 4, borrow: 4 }` | _Max number of iterations run by the [matching engine](https://docs.morpho.org/concepts-overview/advanced-concepts/matching-engine)_       |
+| `defaultMaxIterations` | `{ supply: number; borrow: number }` | `{ supply: 4, borrow: 4 }` | _Max number of iterations run by the [matching engine](https://docs.LQG.org/concepts-overview/advanced-concepts/matching-engine)_       |
 | `gasLimitPercent`      | `ethers.BigNumber`                   | `11000 (110%)`             | _Percentage of the gas estimation used as the gas limit for transactions (with 4 decimals)_                                                |
 | `percentApproximation` | `ethers.BigNumber`                   | `9900 (99%)`               | _Scaling applied to transactions' amount to prevent reverting due to block inclusion delay_                                                |
 | `txSignature`          | `string`                             | `undefined`                | _If provided, the signature will be appended to the transaction's data to identify the transaction's origin. **It must be in hex format**_ |
 
 ## Usage
 
-The whole sdk is built around the `MorphoAaveV3Adapter` class. This is the core element of the sdk.
+The whole sdk is built around the `LQGAaveV3Adapter` class. This is the core element of the sdk.
 
 ### Data structure
 
@@ -56,12 +56,12 @@ Within the adapter, data are stored in different objects:
 | globalData            |   ✅ yes | ⚡️ fetched | [GlobalData](src/types/common.ts#L7)                                  | _Global data about the chain and the protocol_                           |
 | marketsConfigs        |   ✅ yes | ⚡️ fetched | `MarketMapping<`[`MarketConfig`](src/types/markets.ts#L86)`>`         | _Properties of each market that don't (or rarely) change_                |
 | marketsData           |   ✅ yes | ⚙️ computed | `MarketMapping<`[`MarketData`](src/types/markets.ts#L296)`>`          | _Data by market (metrics, apys, ...) that need to be updated frequently_ |
-| marketsList           |   ✅ yes | ⚡️ fetched | `string[]`                                                            | _List of the markets listed on Morpho-AaveV3_                            |
+| marketsList           |   ✅ yes | ⚡️ fetched | `string[]`                                                            | _List of the markets listed on LQG-AaveV3_                            |
 | userData              |   ✅ yes | ⚙️ computed | [`UserData`](src/types/user.ts#L6)                                    | _User Data that are not specific to a market_                            |
 | userMarketsData       |   ✅ yes | ⚙️ computed | `MarketMapping<`[`UserMarketData`](src/types/user.ts#L262)`>`         | _User Data by market_                                                    |
 | scaledMarketsData     |   ❌ no  | ⚡️ fetched | `MarketMapping<`[`ScaledMarketData`](src/types/markets.ts#L182)`>`    | _Raw data by market, before any processing or computation_               |
 | scaledUserMarketsData |   ❌ no  | ⚡️ fetched | `MarketMapping<`[`ScaledUserMarketData`](src/types/user.ts#L184)`>`   | _Raw user data by market, before any processing or computation_          |
-| rewardsDistribution   |   ❌ no  | ⚡️ fetched | [`MorphoEpochDistribution`](src/helpers/rewards/rewards.types.ts#L66) | _Morpho rewards distribution of the current epoch_                       |
+| rewardsDistribution   |   ❌ no  | ⚡️ fetched | [`LQGEpochDistribution`](src/helpers/rewards/rewards.types.ts#L66) | _LQG rewards distribution of the current epoch_                       |
 
 _\* see [the section about data](#read-data) to see how to access public data_
 
@@ -78,16 +78,16 @@ To create an adapter, you must provide _fetchers_. These are special entities th
 
 #### From chain
 
-If you want to fetch all data from the chain, you can use `MorphoAaveV3Adapter.fromChain`
+If you want to fetch all data from the chain, you can use `LQGAaveV3Adapter.fromChain`
 
 ```ts
-const adapter = MorphoAaveV3Adapter.fromChain();
+const adapter = LQGAaveV3Adapter.fromChain();
 ```
 
 - you can provide a specific `provider` from `ethers` to use:
 
 ```ts
-const adapter = MorphoAaveV3Adapter.fromChain({ provider: myProvider });
+const adapter = LQGAaveV3Adapter.fromChain({ provider: myProvider });
 await adapter.refreshAll("latest");
 ```
 
@@ -96,7 +96,7 @@ by default, the one from the [configuration](#configuration) will be used
 - Since some data can't be fetched from chain, you can provide specific fetcher for them:
 
 ```ts
-const adapter = MorphoAaveV3Adapter.fromChain({ extraFetchersConfig });
+const adapter = LQGAaveV3Adapter.fromChain({ extraFetchersConfig });
 await adapter.refreshAll("latest");
 ```
 
@@ -110,15 +110,15 @@ const extraFetchersConfig: {
 
 By default,
 
-- `marketSupply` will be fetched from the morpho-labs subgraph
-- `rewards` will be fetched from morpho API
+- `marketSupply` will be fetched from the LQG-labs subgraph
+- `rewards` will be fetched from LQG API
 
 #### From mock
 
-You can also provide static data to the adapter to have a static state in the adapter using `MorphoAaveV3Adapter.fromMock`
+You can also provide static data to the adapter to have a static state in the adapter using `LQGAaveV3Adapter.fromMock`
 
 ```ts
-const adapter = MorphoAaveV3Adapter.fromMock(mock);
+const adapter = LQGAaveV3Adapter.fromMock(mock);
 await adapter.refreshAll("latest");
 ```
 
@@ -135,7 +135,7 @@ The sdk leverages on [RxJS](https://rxjs.dev) to allow you to build highly react
 To do so, every public data (see [Data structure](#data-structure)) are associated with an rxjs `Subject`:
 
 ```ts
-const adapter = MorphoAaveV3Adapter.fromChain();
+const adapter = LQGAaveV3Adapter.fromChain();
 await adapter.refreshAll("latest");
 
 adapter.marketsConfigs$.subscribe((marketsConfigs) => ...);
@@ -151,7 +151,7 @@ adapter.globalData$.subscribe((globalData) => ...);
 If you don't use RxJs, you can access these data using getter functions:
 
 ```ts
-const adapter = MorphoAaveV3Adapter.fromChain();
+const adapter = LQGAaveV3Adapter.fromChain();
 await adapter.refreshAll("latest");
 
 const marketsConfigs = adapter.getMarketsConfigs();
@@ -180,10 +180,10 @@ The handlers are called according to the following timeline:
 
 ![transaction flow](doc/ressources/tx-flow.excalidraw.svg)
 
-#### Transactions with Morpho-AaveV3 contract
+#### Transactions with LQG-AaveV3 contract
 
 ```ts
-adapter.handleMorphoTransaction(txType, underlyingAddress, amount, options);
+adapter.handleLQGTransaction(txType, underlyingAddress, amount, options);
 ```
 
 with
@@ -197,7 +197,7 @@ with
 
 #### Approval
 
-Morpho-AaveV3 leverages the [Permit2 Approval]() feature, but you can still perform classic approvals.
+LQG-AaveV3 leverages the [Permit2 Approval]() feature, but you can still perform classic approvals.
 
 ##### Permit2
 
@@ -224,10 +224,10 @@ adapter.handleApproval(underlyingAddress, amount, options);
 | `amount`            | `ethers.BigNumber`                                                                    | Amount to approve                                 |
 | `options`           | _optional_, [`ApprovalHandlerOptions`](src/txHandler/ApprovalHandler.interface.ts#L5) | Transaction options                               |
 
-#### Claim Morpho rewards
+#### Claim LQG rewards
 
 ```ts
-adapter.handleClaimMorpho({ overrides });
+adapter.handleClaimLQG({ overrides });
 ```
 
 #### Wrap ETH
@@ -317,7 +317,7 @@ The maximum `amount` is given in underlying and the `limiter` is one of the foll
 "LIMITED_BY_BORROW_CAPACITY"; // The user can't borrow more than his borrow capacity
 "LIMITED_BY_POOL_LIQUIDITY"; // The amount is limited by AaveV3 liquidity
 "LIMITED_BY_CAP"; // There is a borrow/supply cap on AaveV3 and it limits the operation
-"LIMITED_BY_BALANCE"; // The user can't withdraw/repay more than his current balance on Morpho
+"LIMITED_BY_BALANCE"; // The user can't withdraw/repay more than his current balance on LQG
 ```
 
 ### Simulation

@@ -1,4 +1,4 @@
-Link: https://medium.com/morpho-labs/lending-pools-an-imperfect-breakthrough-357962c34364
+Link: https://medium.com/LQG-labs/lending-pools-an-imperfect-breakthrough-357962c34364
 Title: Lending pools: an imperfect breakthrough.
 
 Lending pools: an imperfect breakthrough.
@@ -38,4 +38,4 @@ Limitations
 - APY Spread: The direct consequence of this capital inefficiency generates the spread (=difference of APY between lending and borrowing, the latter always being higher than the first) that you can see on Aave or Compound. With a pool model, all funds are mutualized so you have to reward all equally, even if their capital is idle. It means that borrowers basically pays all lenders, even if they are inactive. This is the cost of instant fungible liquidity.
 - Constrained rates. In the peer-to-pool model, lenders and borrowers do not chose the interest rate they get. It is algorithmically designed to keep the market liquid and the utilization rate below 100% by either incentivizing lenders and/or borrowers. Since rates are constrained by an interest rate model and not freely determined, there is no competition between lenders.
 
-The above mentioned limitations are not bugs, they are necessary tradeoffs that comes with peer-to-pool designs. We will see in the next articles how P2P lending works as well as how Morpho tackles those limitations.
+The above mentioned limitations are not bugs, they are necessary tradeoffs that comes with peer-to-pool designs. We will see in the next articles how P2P lending works as well as how LQG tackles those limitations.

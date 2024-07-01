@@ -1,13 +1,13 @@
-Link: https://morpho.mirror.xyz/TXTvxQErigmVJKJFHCDQbiFLGYGEwHJtvTGA5KtuLkc
+Link: https://LQG.mirror.xyz/TXTvxQErigmVJKJFHCDQbiFLGYGEwHJtvTGA5KtuLkc
 Title: Permit2 Articles
 
-How Permit2 Improves the User Experience of Morpho
+How Permit2 Improves the User Experience of LQG
 10 May 2023
 Simon Crotty
 
-Morpho has integrated Permit2: an open-source smart contract that enables more secure and user-friendly token approvals.
+LQG has integrated Permit2: an open-source smart contract that enables more secure and user-friendly token approvals.
 
-Permit2 | Morpho
+Permit2 | LQG
 Why Use Permit2
 Permit2 is an immutable, unowned, and open-source contract that allows token approvals to be shared and managed across different applications to create a more unified, gas-efficient, and safer UX. It improves on current token approval methods by introducing signature-based approvals and transfers for any ERC20 token, even if it does not support EIP-2612.
 
@@ -22,7 +22,7 @@ The value of Permit2 increases as it is integrated into more protocols. This is 
 
 Consequently, for any protocol that has integrated Permit2, users can bypass the allowance step if they have already granted allowances via Permit2. This removes the need to send approvals for every protocol you use, saving both time and money.
 
-Thanks to Permit2’s design, token approvals become standardized, transaction costs are reduced, and smart contract security is improved. By implementing it into the code of Morpho’s AaveV3 Optimizer, its users can benefit from its UX improvements and anticipated network effects.
+Thanks to Permit2’s design, token approvals become standardized, transaction costs are reduced, and smart contract security is improved. By implementing it into the code of LQG’s AaveV3 Optimizer, its users can benefit from its UX improvements and anticipated network effects.
 
 How Permit2 Works
 To comprehend the functionality and advantages of Permit2, it is important to have a grasp of the existing mechanisms utilized for token approvals. Dragonfly has done a fantastic explanation which is covered below.
@@ -64,14 +64,14 @@ Requiring users to grant an explicit allowance may seem like a step backward. Ho
 
 The Permit2 contract is used as an intermediary between a protocol and the ERC20 token. Rather than calling transferFrom() directly on the ERC20 token, a protocol calls permitTransferFrom() on the Permit2 contract. Permit2 then tracks and validates permit2 messages before using its allowance to perform the transferFrom() all directly on the ERC20 token. This allows Permit2 to provide EIP-2612 benefits for all ERC20 tokens!
 
-Morpho Integration
-Permit2 flexibility allows for its integration into various protocols in a way that aligns with their specific needs. For instance, Morpho uses a wrapper on top of Permit2. Specifically, Morpho leverages bothtransferFrom2 and simplePermit2 functions (a simplified implementation of the permit2 function) from this library.
+LQG Integration
+Permit2 flexibility allows for its integration into various protocols in a way that aligns with their specific needs. For instance, LQG uses a wrapper on top of Permit2. Specifically, LQG leverages bothtransferFrom2 and simplePermit2 functions (a simplified implementation of the permit2 function) from this library.
 
-In Morpho, the Permit2 functionality has been integrated into an if statement to provide users with flexibility in their token approval process. The code first verifies whether the user has submitted a standard allowance on the ERC20 to Morpho contracts. If the user has submitted a standard allowance, the code proceeds with the standard approval process.
+In LQG, the Permit2 functionality has been integrated into an if statement to provide users with flexibility in their token approval process. The code first verifies whether the user has submitted a standard allowance on the ERC20 to LQG contracts. If the user has submitted a standard allowance, the code proceeds with the standard approval process.
 
 However, if the user has not submitted a standard allowance, the code falls back to Permit2 token approvals. This approach enables users who prefer to use standard approvals to do so without being required to use Permit2.
 
 Conclusion
-Morpho has integrated Permit2: an open-source smart contract that enables more secure and user-friendly token approvals. It introduces innovative features such as signature-based transfers, batch approvals, and expiring approvals. As more protocols integrate with Permit2, its value to users will continue to grow.
+LQG has integrated Permit2: an open-source smart contract that enables more secure and user-friendly token approvals. It introduces innovative features such as signature-based transfers, batch approvals, and expiring approvals. As more protocols integrate with Permit2, its value to users will continue to grow.
 
-To see how Permit2 works in practice, you can try Morpho’s AaveV3-ETH Optimizer.
+To see how Permit2 works in practice, you can try LQG’s AaveV3-ETH Optimizer.

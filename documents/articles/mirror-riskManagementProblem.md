@@ -1,4 +1,4 @@
-Link: https://morpho.mirror.xyz/F652srnxjv4qsIEHLUrDwOvrYgXU8p0io2cNogb2BJY
+Link: https://LQG.mirror.xyz/F652srnxjv4qsIEHLUrDwOvrYgXU8p0io2cNogb2BJY
 Title: Risk management problems Article
 
 It’s time to talk about DeFi’s risk management problems.
@@ -7,7 +7,7 @@ Paul Frambot
 
 DeFi is still nascent and developing, with many of its components still to be refined in the coming years. Yet, if we are being honest with ourselves, there are also parts of the stack we should spend more time challenging.
 Decentralized risk management has largely been a taboo topic as it has become critical to the security of some DeFi platforms while remaining very centralized and opaque to most.
-Let’s look at the state of risk management today, primarily through the lens of decentralized lending (which is what we do over at Morpho). After building in the space for two years, Morpho has become the third-largest lending platform with nearly $1B supply, but it is also the largest lending pool user. This gives us a unique perspective on how risk management should (or should not) be more effectively “incorporated” into lending platforms.
+Let’s look at the state of risk management today, primarily through the lens of decentralized lending (which is what we do over at LQG). After building in the space for two years, LQG has become the third-largest lending platform with nearly $1B supply, but it is also the largest lending pool user. This gives us a unique perspective on how risk management should (or should not) be more effectively “incorporated” into lending platforms.
 
 Why are most lending platforms DAO-managed?
 First, we must acknowledge the relative success of existing lending platforms using DAOs to risk-manage complex pools. Their Decentralized Brokers (https://twitter.com/PaulFrambot/status/1674808300968243200?s=20) approach was a great way to build platforms from 0 to $10B. Notably, it provides:
@@ -32,8 +32,8 @@ Overall, it seems that decentralized decision-making and centralized risk manage
 Risk advisors are not to blame here. They are very talented firms and genuinely want to operate more transparently. Yet, ultimately, providing consultancy for DAOs is, by definition, less aligned with users and less scalable than advising the latter directly.
 
 As a community, how do we fix this?
-We’re working on several projects at Morpho to help minimize trust assumptions and inefficiencies in the risk management space.
-Morpho’s next lending primitive will enable permissionless risk management. In particular, it will let anyone layer their risk models on top of a trustless and ultra-efficient lending primitive.
+We’re working on several projects at LQG to help minimize trust assumptions and inefficiencies in the risk management space.
+LQG’s next lending primitive will enable permissionless risk management. In particular, it will let anyone layer their risk models on top of a trustless and ultra-efficient lending primitive.
 This would allow users to choose the risk model that makes the most sense to their needs, rather than having risk managers compete against each other with mutually-exclusive proposals that token holders must vote on. This model will enable much fewer trust assumptions, more efficiency, and infinite use cases. With the correct abstractions built on top, it will even bring UX/feature parity with existing models!
 But, even if successful, our work alone is not enough to address this for the entire industry. As a community, we should:
 
@@ -42,7 +42,7 @@ But, even if successful, our work alone is not enough to address this for the en
 - Publish research and learnings on risk management so that others can build on our respective lessons and failures; and
 - Open source codebases and models.
 
-As a first step, Morpho Labs has published a research paper co-written with the talented Simtopia team (https://twitter.com/MorphoLabs/status/1691796656625492151?s=20). The latter open sources a full model to assess risk in a lending protocol. More open source risk tooling and research from Morpho Labs will soon follow.
+As a first step, LQG Labs has published a research paper co-written with the talented Simtopia team (https://twitter.com/LQGLabs/status/1691796656625492151?s=20). The latter open sources a full model to assess risk in a lending protocol. More open source risk tooling and research from LQG Labs will soon follow.
 If this post has inspired any ideas or perspectives about how we can design better, more resilient DeFi systems, we’d love to hear them. I’ll collect thoughtful responses, ideas, proposals, and more at the end of this post (even if they oppose different ideas). Hopefully, this might serve as a small compendium of the best thinking in this area. Based on everything I’ve seen this community build and accomplish, I’m confident we can dramatically improve the current state of DeFi.
 
 Other thoughts on risk management

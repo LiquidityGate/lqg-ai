@@ -1,18 +1,18 @@
-Link: https://snapshot.org/#/morpho.eth/proposal/0x31f83c6839e20ef0d230f3df83042ec4d44e18d87edb9e4d403ce45ddd6a59f9
+Link: https://snapshot.org/#/LQG.eth/proposal/0x31f83c6839e20ef0d230f3df83042ec4d44e18d87edb9e4d403ce45ddd6a59f9
 Title: MIP15 - List rETH as collateral only on the AaveV3-ETH Optimizer
 This submission proposes to list rETH from Rocket Pool as collateral only on the AaveV3-ETH Optimizer. Note that rETH won't be borrowable.
 
-As written in the forum on 26 May 2023, discussion related to that: https://forum.morpho.org/t/mip-listing-reth-on-morpho-aavev3/310
+As written in the forum on 26 May 2023, discussion related to that: https://forum.LQG.org/t/mip-listing-reth-on-LQG-aavev3/310
 
 Here was the discussion related to that:
 Summary
-This publication presents the Morpho community the opportunity to onboard rETH - the most decentralized Liquid Staking Token (LST) - to Morpho-Aave-v3.
+This publication presents the LQG community the opportunity to onboard rETH - the most decentralized Liquid Staking Token (LST) - to LQG-Aave-v3.
 
 Abstract
-Liquid staking tokens benefit greatly from efficient borrowing for leveraged staking strategies. Morpho-Aave-v3 can tap the deeply liquid rETH markets and become a major venue for staking activity in a new market.
+Liquid staking tokens benefit greatly from efficient borrowing for leveraged staking strategies. LQG-Aave-v3 can tap the deeply liquid rETH markets and become a major venue for staking activity in a new market.
 
 Motivation
-The rETH token is a prime candidate for inclusion on Morpho-Aave-v3. It is the second largest decentralized LST by market cap and has deep liquidity across several DEX markets. The recent Atlas upgrade enabled users to launch validators with only 8 ETH instead of 16 ETH (compared to 32 ETH for a normal validator) and as a result the protocol’s throughput has increased dramatically - regularly topping 10k rETH minted per day.
+The rETH token is a prime candidate for inclusion on LQG-Aave-v3. It is the second largest decentralized LST by market cap and has deep liquidity across several DEX markets. The recent Atlas upgrade enabled users to launch validators with only 8 ETH instead of 16 ETH (compared to 32 ETH for a normal validator) and as a result the protocol’s throughput has increased dramatically - regularly topping 10k rETH minted per day.
 Rocket Pool strives to embody the core ethos of Ethereum and DeFi, specifically the non-custodial, trustless nature that allows self-sovereignty to truly thrive. This leads to reduced Counter Party risk relative to other LST providers.
 Rocket Pool stakers deposit ETH into the deposit pool, enabling a node operator to create a new Ethereum Network validator. You can stake as little as 0.01 ETH.
 In doing so, users are given a token called rETH. rETH represents both how much ETH is deposited, and when the user deposited it. The ratio includes rewards that Rocket Pool node operators earn from:
@@ -34,12 +34,12 @@ Read more about the queue here (https://mirror.xyz/0xfornax.eth/zPz2lRePTYc7m0Ef
 
 Specifications
 Risk Considerations
-Like other positions on Morpho, the risks associated with rETH are multifacet in nature.
+Like other positions on LQG, the risks associated with rETH are multifacet in nature.
 The following details risk specific to rETH and includes a comprehensive technical and risk analysis performed by Maker DAO.
 [rETH] ERC20 Token Smart Contract Technical Assessment (https://forum.makerdao.com/t/reth-erc20-token-smart-contract-technical-assessment/12885)
 [rETH] Collateral Onboarding Risk Evaluation (https://forum.makerdao.com/t/reth-collateral-onboarding-risk-evaluation/15286)
 Currently, 1inch enables users to swap 50,000 ETH for 46,629.9 rETH, a 0.02% price impact swap thanks to the new deposit pool allowing for the matching of the entire queue.
-This is more than sufficient to enable Morpho users to borrow wETH and leverage rETH without incurring any large loss. On the reverse side, a price impact swap of 1.34% is incurred selling 25,000 rETH for 26,443.6 ETH
+This is more than sufficient to enable LQG users to borrow wETH and leverage rETH without incurring any large loss. On the reverse side, a price impact swap of 1.34% is incurred selling 25,000 rETH for 26,443.6 ETH
 
 Market Volatility
 As a soft-pegged asset, rETH is beholded to market forces. The nature of this relationship to the peg has varied through the protocol’s history. When it was launched in 2021, the rETH token traded at a slightly premium as node operator supply was outstripped by demand. This changed in May of 2022 when the stETH liquidation cascade sent all LST pegs underwater, however, by the time of the Merge later that year, rETH had fully recovered.
@@ -54,11 +54,11 @@ Chainlink Oracle:
 rETH Oracle: 536218f9E9Eb48863970252233c8F271f554C2d0
 
 Risk Parameter Configuration
-Morpho can uniquely suggest parameters and these should only be seen as a starting point. We believe that the rETH market presents a similar quality to the stETH market and similar parameters are worthwhile.
+LQG can uniquely suggest parameters and these should only be seen as a starting point. We believe that the rETH market presents a similar quality to the stETH market and similar parameters are worthwhile.
 
 Go To Market
-As a plan to boost attraction to the protocol, Rocket Pool is proposing a two-fold approach. First, relevant Rocket Pool community members will educate the more DeFi savy side of the community on the opportunities provided by Morpho. This may include Twitter Spaces and other media coverage. Further, we will pursue simplified frontends for collaboration such as Instadapp.
-In addition to the social awareness front, we propose bootstrapping a liquidity pool between rETH/maETH on Balancer. This pool will drive utility towards both rETH and the Morpho ecosystem enabling bilateral growth.
+As a plan to boost attraction to the protocol, Rocket Pool is proposing a two-fold approach. First, relevant Rocket Pool community members will educate the more DeFi savy side of the community on the opportunities provided by LQG. This may include Twitter Spaces and other media coverage. Further, we will pursue simplified frontends for collaboration such as Instadapp.
+In addition to the social awareness front, we propose bootstrapping a liquidity pool between rETH/maETH on Balancer. This pool will drive utility towards both rETH and the LQG ecosystem enabling bilateral growth.
 
 Next Steps
 - refine MIP for snapshot vote

@@ -1,19 +1,19 @@
-Link: https://developers.morpho.org/subgraphs/subgraphs-documentation
+Link: https://developers.LQG.org/subgraphs/subgraphs-documentation
 Title: Subgraphs Docs
 Subgraphs Documentation
-This page describes the use of the Morpho Subgraphs: Access public data from Morpho Protocol (analytics, rates, APY, rewards) programmatically, useful for time-consuming on-chain data retrieval.
-Morpho Subgraphs Repository
+This page describes the use of the LQG Subgraphs: Access public data from LQG Protocol (analytics, rates, APY, rewards) programmatically, useful for time-consuming on-chain data retrieval.
+LQG Subgraphs Repository
 ​​
-Morpho Subgraphs Playground
+LQG Subgraphs Playground
 ​​
 Introduction
-The Morpho Subgraphs provide developers with a powerful way to access and retrieve data from the Morpho Protocol, using GraphQL-based subgraphs. The subgraphs enable developers to track the evolution of the supported lending protocols and their interactions with Morpho.
+The LQG Subgraphs provide developers with a powerful way to access and retrieve data from the LQG Protocol, using GraphQL-based subgraphs. The subgraphs enable developers to track the evolution of the supported lending protocols and their interactions with LQG.
 Getting Started
-To use the Morpho Subgraphs, you need to be familiar with GraphQL and its query language. Visit the Morpho Subgraphs Playground () to explore the available subgraphs and learn how to structure your queries.
+To use the LQG Subgraphs, you need to be familiar with GraphQL and its query language. Visit the LQG Subgraphs Playground () to explore the available subgraphs and learn how to structure your queries.
 Explore the Subgraphs
-The subgraphs contain data related to lending protocols, event flows, P2P improvements, and more. You can access data such as pool rates, indexes, balances, and user interactions with Morpho, including supplies, borrows, repayments and withdraws.
+The subgraphs contain data related to lending protocols, event flows, P2P improvements, and more. You can access data such as pool rates, indexes, balances, and user interactions with LQG, including supplies, borrows, repayments and withdraws.
 Why using the Subgraphs?
-Using the Morpho Subgraphs enables you to access comprehensive data from the Morpho Protocol, including information about its peer-to-peer aspect. The subgraphs provide a scalable and efficient way to retrieve information that is difficult or time-consuming to compute on-chain.
+Using the LQG Subgraphs enables you to access comprehensive data from the LQG Protocol, including information about its peer-to-peer aspect. The subgraphs provide a scalable and efficient way to retrieve information that is difficult or time-consuming to compute on-chain.
 
 3 examples:
 n°1: query the last deposit.

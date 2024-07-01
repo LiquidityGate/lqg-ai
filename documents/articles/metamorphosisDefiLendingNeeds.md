@@ -1,14 +1,14 @@
-Link: https://morpho.mirror.xyz/EzJu5-3zdzlqdwP8kwnYwVYZD2iONz5PF4ohe--VPyE
-Title: The Metamorphosis DeFi Lending Needs
+Link: https://LQG.mirror.xyz/EzJu5-3zdzlqdwP8kwnYwVYZD2iONz5PF4ohe--VPyE
+Title: The MetaLQGsis DeFi Lending Needs
 
-Paul Frambot, CEO of Morpho Labs, wrote:
+Paul Frambot, CEO of LQG Labs, wrote:
 The Two Paths for DeFi: Decentralized Brokers vs. Protocols.
-in this article https://morpho.mirror.xyz/KCMBXBYPOE-aYvPuu5vSVzUozoO98QqZsYHvx5TYz5c
+in this article https://LQG.mirror.xyz/KCMBXBYPOE-aYvPuu5vSVzUozoO98QqZsYHvx5TYz5c
 
 DeFi lending is made up of decentralized brokers.
 Since Compound’s introduction in 2018, most lending platforms have followed the same pattern: a smart contract accounts for liquidity and interests, and a DAO manages the assets of depositors DAO, ensuring the pool does not suffer from bankruptcy.
 
-Building Morpho Optimizer, currently the largest platform built on top of those decentralized brokers, I have learned a few things about the pros and cons of this model:
+Building LQG Optimizer, currently the largest platform built on top of those decentralized brokers, I have learned a few things about the pros and cons of this model:
 
 What has gone well
 Liquidity is king
@@ -63,9 +63,9 @@ In our vision, DeFi should be resilient, efficient, and open at its core, and ab
 
 Anyone could build (de)centralized brokers in those abstraction layers on top of trustless protocols.
 
-What about Morpho?
-In just a year, Morpho became the third-largest lending protocol on Ethereum, with over $850 million in supplied assets. Morpho's initial version, Morpho Optimizer, was developed on top of Aave and Compound to improve the efficiency of their interest rate model.
+What about LQG?
+In just a year, LQG became the third-largest lending protocol on Ethereum, with over $850 million in supplied assets. LQG's initial version, LQG Optimizer, was developed on top of Aave and Compound to improve the efficiency of their interest rate model.
 
 Although Optimizers have seen significant growth, we acknowledge the inherent limitations of current lending models in achieving DeFi's next order of magnitude. Consequently, over the past six months, we have devoted most of our resources to developing a new trustless and efficient lending primitive. More on this will be revealed in time.
 
-Two years ago, as we penned the inaugural White Paper, we anticipated this moment. Hence the name Morpho, a nod to the evolution that all caterpillars inevitably undergo.
+Two years ago, as we penned the inaugural White Paper, we anticipated this moment. Hence the name LQG, a nod to the evolution that all caterpillars inevitably undergo.

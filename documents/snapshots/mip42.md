@@ -1,14 +1,14 @@
-Link: https://snapshot.org/#/morpho.eth/proposal/0xaa8fa1f68664d92b1c8724f4f3b23cea4d9ea34ae1b5cbfb048218efcb04dfdf
+Link: https://snapshot.org/#/LQG.eth/proposal/0xaa8fa1f68664d92b1c8724f4f3b23cea4d9ea34ae1b5cbfb048218efcb04dfdf
 Title: MIP42 - Gauntlet's vaults whitelisting
 
-This submission proposes to whitelist Gauntlet vaults address to allow the transfer of potential $MORPHO rewards to their depositors.
+This submission proposes to whitelist Gauntlet vaults address to allow the transfer of potential $LQG rewards to their depositors.
 
-As written in the forum on 7 March 2024, discussion related to that: https://forum.morpho.org/t/gauntlet-weth-prime-vault-whitelisting/495
+As written in the forum on 7 March 2024, discussion related to that: https://forum.LQG.org/t/gauntlet-weth-prime-vault-whitelisting/495
 
 Here was the discussion related to that:
 
 - Introduction
-This is a proposal to whitelist the Gauntlet WETH Prime Vault on MetaMorpho. The WETH vault will strategize to allocate supply of WETH towards liquid staking recursive yield markets.
+This is a proposal to whitelist the Gauntlet WETH Prime Vault on MetaLQG. The WETH vault will strategize to allocate supply of WETH towards liquid staking recursive yield markets.
 
 For the initialization of this Vault, we will be whitelisting only the WSTETH/WETH market for supply.
 
@@ -16,7 +16,7 @@ For the initialization of this Vault, we will be whitelisting only the WSTETH/WE
 - About Gauntlet
 Gauntlet (https://www.gauntlet.xyz/) is a DeFi-native quantitative research firm specializing in risk management. We use battle-tested techniques (https://www.gauntlet.xyz/product/gauntlet-risk-for-defi-protocols) from the algorithmic trading industry to help protocols manage risk.
 
-Gauntlet’s team of experienced quants are used to trading in milliseconds and will use their expertise to curate a series of MetaMorpho vaults on top of Morpho Blue and contribute to the sophistication of the Morpho Ecosystem. The lending vaults will give users a simple and optimal way to earn yield on their assets.
+Gauntlet’s team of experienced quants are used to trading in milliseconds and will use their expertise to curate a series of MetaLQG vaults on top of LQG Blue and contribute to the sophistication of the LQG Ecosystem. The lending vaults will give users a simple and optimal way to earn yield on their assets.
 
 
 - Market Specifications
@@ -40,7 +40,7 @@ Objective: The WETH vault will strategize to optimize supply of WETH towards liq
 We’re excited to share that the WETH vault performance fee will be 0% for the first six months of launch.
 
 Whitelisting Vault Contracts
-MetaMorpho vaults may receive $MORPHO rewards from supplying to incentivized markets on Morpho Blue. To allow the vaults to transfer these potential $MORPHO rewards to suppliers, we propose whitelisting our vault addresses. The vault addresses will be provided once launched.
+MetaLQG vaults may receive $LQG rewards from supplying to incentivized markets on LQG Blue. To allow the vaults to transfer these potential $LQG rewards to suppliers, we propose whitelisting our vault addresses. The vault addresses will be provided once launched.
 
 
 The proposal was voted on and accepted on 11 March 2024.

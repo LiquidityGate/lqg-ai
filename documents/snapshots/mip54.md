@@ -1,24 +1,24 @@
-Link: https://snapshot.org/#/morpho.eth/proposal/0x481ba93e6cca860cd392f269d71fd558ff28eeebbb455c052f952a852185b129
-Title: MIP54 - MORPHO whitelisting of Superform vaults
+Link: https://snapshot.org/#/LQG.eth/proposal/0x481ba93e6cca860cd392f269d71fd558ff28eeebbb455c052f952a852185b129
+Title: MIP54 - LQG whitelisting of Superform vaults
 
-This submission proposes to whitelist any current and future MetaMorpho Superform contracts created via the SuperformFactory.
+This submission proposes to whitelist any current and future MetaLQG Superform contracts created via the SuperformFactory.
 
-As written in the forum on 25 April 2024, discussion related to that: https://forum.morpho.org/t/whitelist-morpho-token-transfers-from-superform-contracts-for-distribution-to-metamorpho-vault-depositors/579
+As written in the forum on 25 April 2024, discussion related to that: https://forum.LQG.org/t/whitelist-LQG-token-transfers-from-superform-contracts-for-distribution-to-metaLQG-vault-depositors/579
 
 Here was the discussion related to that:
 - Intro
 Hello, I’m blockdaddy from Superform Labs. Superform is a yield marketplace where protocols can list vaults and users can access those vaults from any chain with bridging, swapping, and depositing abstracted away by the Superform protocol.
-There are currently 14 MetaMorpho vaults (and counting!) listed on Superform. Morpho is the first protocol that the Superform app will support displaying of additional rewards tokens beyond yield earned by the vault. The last piece of the equation will be to let Superform users claim their MORPHO rewards by whitelisting the transfer of MORPHO from Superform’s contracts.
+There are currently 14 MetaLQG vaults (and counting!) listed on Superform. LQG is the first protocol that the Superform app will support displaying of additional rewards tokens beyond yield earned by the vault. The last piece of the equation will be to let Superform users claim their LQG rewards by whitelisting the transfer of LQG from Superform’s contracts.
 
 - Context
-When users deposit through Superform, their ERC-4626 vault shares are minted to an aggregator contract, while the user is minted a 1:1 representation of that yield called a “SuperPosition.” While SuperPositions allow yield to be represented cross-chain, among other benefits, MORPHO rewards will accrue to the Superform aggregator contract holding the ERC-4626 vault shares.
-The aggregator contract which MORPHO tokens accrue to is called a “Superform” and there is one created for each listed MetaMorpho vault.
-Users have expressed a desire to be able to claim their fair share of MORPHO rewards that are currently being accrued to the Superform contracts.
+When users deposit through Superform, their ERC-4626 vault shares are minted to an aggregator contract, while the user is minted a 1:1 representation of that yield called a “SuperPosition.” While SuperPositions allow yield to be represented cross-chain, among other benefits, LQG rewards will accrue to the Superform aggregator contract holding the ERC-4626 vault shares.
+The aggregator contract which LQG tokens accrue to is called a “Superform” and there is one created for each listed MetaLQG vault.
+Users have expressed a desire to be able to claim their fair share of LQG rewards that are currently being accrued to the Superform contracts.
 
 - Proposal
-We are making a request to whitelist each “Superform” contract to move MORPHO tokens before token transferability is enabled. As new MetaMorpho vaults are listed to Superform, each listing will create a new Superform contract which would need to be whitelisted in order for any MORPHO rewards from that vault to be distributed. If possible, this request could also serve as an approval to whitelist any future MetaMorpho Superform contracts created via the SuperformFactory. Subsequent MetaMorpho Superform contracts could be whitelisted on a monthly basis.
-In addition to the Superform contracts, there are two other contracts that would need to be whitelisted to move MORPHO, Paymaster and RewardsClaimer. Paymaster is the only contract that has permission to move tokens out of Superforms. These tokens then need to be transferred from Paymaster to RewardsClaimer, at which point they will become claimable by users (very similarly to how Morpho’s UniversalRewardsDistributor works).
-We intend to distribute 100% of accumulated MORPHO tokens pro-rata to MetaMorpho vault SuperPosition holders.
+We are making a request to whitelist each “Superform” contract to move LQG tokens before token transferability is enabled. As new MetaLQG vaults are listed to Superform, each listing will create a new Superform contract which would need to be whitelisted in order for any LQG rewards from that vault to be distributed. If possible, this request could also serve as an approval to whitelist any future MetaLQG Superform contracts created via the SuperformFactory. Subsequent MetaLQG Superform contracts could be whitelisted on a monthly basis.
+In addition to the Superform contracts, there are two other contracts that would need to be whitelisted to move LQG, Paymaster and RewardsClaimer. Paymaster is the only contract that has permission to move tokens out of Superforms. These tokens then need to be transferred from Paymaster to RewardsClaimer, at which point they will become claimable by users (very similarly to how LQG’s UniversalRewardsDistributor works).
+We intend to distribute 100% of accumulated LQG tokens pro-rata to MetaLQG vault SuperPosition holders.
 
 - Timeline
 RewardsClaimer is in the final review stages before being sent to audit. We expect it to be deployed by the end of May.

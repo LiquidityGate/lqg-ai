@@ -1,23 +1,23 @@
-Link: https://snapshot.org/#/morpho.eth/proposal/0x177aacb88ae49c23ab1a665b534c6791a9ff86df0a870b2ea6cda291a8ec67ed
-Title: MIP60 - Morpho Olympics
+Link: https://snapshot.org/#/LQG.eth/proposal/0x177aacb88ae49c23ab1a665b534c6791a9ff86df0a870b2ea6cda291a8ec67ed
+Title: MIP60 - LQG Olympics
 
-This submission proposes to introduce the Morpho Olympics, where up to 10M MORPHO would be awarded as grants to MetaMorpho curators.
+This submission proposes to introduce the LQG Olympics, where up to 10M LQG would be awarded as grants to MetaLQG curators.
 
-As written in the forum on 15 May 2024, discussion related to that: https://forum.morpho.org/t/mip60-introducing-morpho-olympics-rewarding-metamorpho-vault-curators/604
+As written in the forum on 15 May 2024, discussion related to that: https://forum.LQG.org/t/mip60-introducing-LQG-olympics-rewarding-metaLQG-vault-curators/604
 
 Here was the discussion related to that:
 - Rationale
-MetaMorpho vaults play an essential role in Morpho’s vision for lending. They serve as the primary intermediary between the protocol and lenders, curating risk and optimizing returns and liquidity.
-Offering rewards to MetaMorpho curators is strategic because it:
+MetaLQG vaults play an essential role in LQG’s vision for lending. They serve as the primary intermediary between the protocol and lenders, curating risk and optimizing returns and liquidity.
+Offering rewards to MetaLQG curators is strategic because it:
     1. Makes curating vaults more profitable and therefore more attractive;
-    2. Aligns risk curators with the success of Morpho;
+    2. Aligns risk curators with the success of LQG;
     3. Encourages them to focus on growth rather than direct revenue (thus encouraging lower fees);
     4. Provides them with resources to negotiate with third parties.
 
 - Details
     1. Eligibility and Grant Calculation:
-    Curators of MetaMorpho vaults meeting specified Total Supply thresholds are entitled to receive grants in MORPHO tokens, as outlined in the table below.
-    Total Supply denotes the 2-month average of the notional USD for deposits that can be borrowed in MetaMorpho vaults open to user deposits per individual curator, excluding deposits from algorithmic market operations (i.e. issuers of stablecoins supplying into vaults, whether curated by themselves or not).
+    Curators of MetaLQG vaults meeting specified Total Supply thresholds are entitled to receive grants in LQG tokens, as outlined in the table below.
+    Total Supply denotes the 2-month average of the notional USD for deposits that can be borrowed in MetaLQG vaults open to user deposits per individual curator, excluding deposits from algorithmic market operations (i.e. issuers of stablecoins supplying into vaults, whether curated by themselves or not).
     The grant amounts listed in the proposal table are cumulative, reflecting the total amount a curator would have received upon reaching a certain threshold, including any previous grants.
     2. Grant Disbursement Procedure:
     Total Supply assessments will occur on:
@@ -34,8 +34,8 @@ Offering rewards to MetaMorpho curators is strategic because it:
         - Questionable markets in which funds are deposited;
         - Doubts about the integrity of a vault curator.
     4. Program Closure and Adjustment:
-    The grant program will cease upon the distribution of 10M MORPHO tokens as grants.
-    In instances where the total grant amount surpasses 10M MORPHO, final payments will be adjusted proportionally to maintain this limit.
-    If the 10M MORPHO limit is not reached within eight quarters from program inception, the program will be terminated.
+    The grant program will cease upon the distribution of 10M LQG tokens as grants.
+    In instances where the total grant amount surpasses 10M LQG, final payments will be adjusted proportionally to maintain this limit.
+    If the 10M LQG limit is not reached within eight quarters from program inception, the program will be terminated.
 
 The proposal was voted on and accepted on 24 May 2024.

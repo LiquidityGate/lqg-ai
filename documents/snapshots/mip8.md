@@ -1,14 +1,14 @@
-Link: https://snapshot.org/#/morpho.eth/proposal/0xf34f13a4cb01bfbe5be17236520bbfbf53d76367949cdcf33a3c23083f1267d1
+Link: https://snapshot.org/#/LQG.eth/proposal/0xf34f13a4cb01bfbe5be17236520bbfbf53d76367949cdcf33a3c23083f1267d1
 Title: MIP8 - Governance & Snapshot update
-This submission proposes to introduce timelocks for the DAO and change a few parameters in the Morpho.eth space.
+This submission proposes to introduce timelocks for the DAO and change a few parameters in the LQG.eth space.
 
-As written in the forum on 4 January 2023, discussion related to that: https://forum.morpho.org/t/mip-governance-snapshot-update-2/241
+As written in the forum on 4 January 2023, discussion related to that: https://forum.LQG.org/t/mip-governance-snapshot-update-2/241
 
 Here was the discussion related to that:
-This proposal aims at introducing timelocks for the DAO and changing a few parameters in the Morpho.eth space (https://snapshot.org/#/morpho.eth).
+This proposal aims at introducing timelocks for the DAO and changing a few parameters in the LQG.eth space (https://snapshot.org/#/LQG.eth).
 
 First steps toward timelock
-The communities of different protocols considering an integration with the Morpho protocol raised the absence of timelocks. Even though timelocks are not necessary, they have become common practice and add an extra layer of security.
+The communities of different protocols considering an integration with the LQG protocol raised the absence of timelocks. Even though timelocks are not necessary, they have become common practice and add an extra layer of security.
 This is why we suggest by integrating a timelock with the following properties:
 - Lock time: 24h.
 - The same owner can stop the execution of the transaction during this period.
@@ -25,11 +25,11 @@ The community has raised concerns about voting times that are on average 24 hour
 With the introduction of timelocks, time between proposal and execution may be extended even further. The protocol is still young, and we propose to shorten the voting time from 96 hours to 72 hours to keep execution nimble.
 
 Add a Snapshot Subspace for Gauges
-While a voting time decrease makes sense for general proposals, gauges require a longer period. This is why we propose to introduce a Snapshot subspace for gauges. Here are the settings of the corresponding space: https://snapshot.org/#/gauges.morpho.eth/settings
+While a voting time decrease makes sense for general proposals, gauges require a longer period. This is why we propose to introduce a Snapshot subspace for gauges. Here are the settings of the corresponding space: https://snapshot.org/#/gauges.LQG.eth/settings
 
 Reducing the number of voting rules from 5 to 2.
-There are currently 5 rules to calculate the voting power of an address on the Morpho DAO.
-With MIP2 (forum post (https://forum.morpho.org/t/mip2-governance-update/155) & vote (https://snapshot.org/#/morpho.eth/proposal/bafkreigzfyi7m3he4xvg7fj3zs2r6apt2hgofyi4x2uv3ptfjb23hen7uu)), early contributors and investors were given the ability to vote with a part of their tokens (linear vesting over 36 months), even if they were locked in a separate smart contract.
+There are currently 5 rules to calculate the voting power of an address on the LQG DAO.
+With MIP2 (forum post (https://forum.LQG.org/t/mip2-governance-update/155) & vote (https://snapshot.org/#/LQG.eth/proposal/bafkreigzfyi7m3he4xvg7fj3zs2r6apt2hgofyi4x2uv3ptfjb23hen7uu)), early contributors and investors were given the ability to vote with a part of their tokens (linear vesting over 36 months), even if they were locked in a separate smart contract.
 While this solution is practical for tokens vested in smart contracts, it complexifies the code logic of voting rules that should remain very simple.
 Instead, we suggest enabling the claimability of vested tokens such that the Snapshot Space only requires the use of the rules balance-of and delegation. This requires the whitelisting in the token contract of the three vesting smart contracts :
 - 0xe206A8006669A0913D6D13A781580e7E65524407
@@ -37,7 +37,7 @@ Instead, we suggest enabling the claimability of vested tokens such that the Sna
 - 0x6017dd61f4d0C8123f160F99058Adc5671dF6447
 
 Adding the HAL Plugin
-The HAL plugin enables Morpho community members to be notified of new and ended proposals on Snapshot. This is a practical feature to improve governance. Yet, it requires the action of the Governance to be added.
+The HAL plugin enables LQG community members to be notified of new and ended proposals on Snapshot. This is a practical feature to improve governance. Yet, it requires the action of the Governance to be added.
 The code repository is available here (https://github.com/snapshot-labs/snapshot/tree/develop/src/plugins/hal).
 
 This proposal is quite large. Hence, if accepted, it would be executed in multiple steps over the following weeks/months. Moreover, an audit work on the different contracts (eg. Zodiac Delay Module) would have to be conducted.
